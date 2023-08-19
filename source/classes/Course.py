@@ -1,19 +1,13 @@
 class Course:
-    def __init__(self, sigle: str, lab_groups: list[int] | int, theo_groups: list[int] | int) -> None:
-        if isinstance(lab_groups, int):
-            lab_groups = [lab_groups]
-        if isinstance(theo_groups, int):
-            theo_groups = [theo_groups]
+    def __init__(self, sigle: str, lab_group: int, theo_group: int) -> None:
         self.sigle = sigle
-        self.lab_groups = lab_groups
-        self.theo_groups = theo_groups
+        self.lab_group = lab_group
+        self.theo_group = theo_group
 
     def __repr__(self) -> str:
-        return f"Course({self.sigle}, {self.lab_groups}, {self.theo_groups})"
+        return f"Course({self.sigle}, {self.lab_group}, {self.theo_group})"
     
     def __eq__(self, other):
         if isinstance(other, Course):
-            return (self.sigle == other.sigle 
-                    and self.lab_groups == other.lab_groups 
-                    and self.theo_groups == other.theo_groups)
+            return (self.sigle == other.sigle)
         return False

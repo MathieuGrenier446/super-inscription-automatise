@@ -1,19 +1,19 @@
 {
     "credentials": {
-      "username": "username",
+      "username": "paul",
       "password": "password",
       "date_of_birth": "19900101"
     },
     "courses":[
         {
         "sigle": "CS101",
-        "lab_groups": [1, 2],
-        "theo_groups": [1, 3]
+        "lab_group": 1,
+        "theo_group": 1
         },
         {
         "sigle": "CS102",
-        "lab_groups": [3, 4],
-        "theo_groups": [1, 1]
+        "lab_group": 3,
+        "theo_group": 1
         }
     ] 
 }
